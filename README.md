@@ -1,0 +1,4 @@
+# UnsafePerformIO Bug in Haskell
+This repository demonstrates a potential problem when using the `unsafePerformIO` function in Haskell.  `unsafePerformIO` allows side effects within pure code, bypassing Haskell's type system.  This can lead to undefined behavior, memory issues, and makes debugging considerably harder.
+The `bug.hs` file shows the problematic code.  `bugSolution.hs` offers a safer and more idiomatic way to achieve a similar outcome, illustrating better Haskell practices.
+Please refer to the detailed explanations within the code for a comprehensive understanding of this bug and its solution.
